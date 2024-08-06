@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+/* General options start
+ .
+ .
+ */
+ :root{
+    --myColor:
+ }
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    transition: .5s;
+ }
+ a{
+    text-decoration: none;
+    color: white;
+ }
+ 
+ /* General options End
+ .
+ .
+ */
+
+ .blue{
+  background-color: #010a5e;
+  color: white;
+ }
+ .dark{
+    background-color: black;
+    color: white;
+ }
+ .lightDark{
+    background-color: #171717 !important;
+ }
+ /*
+ .
+ .
+ Header Style Start
+ .
+ .
+ */
+ header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: #010D78;
+    z-index: 100;
+ }
+ .navbar .navbar-nav .nav-item a{
+    color: white;
+ }
+.lastNav{
+    display: flex;
+    align-items: center;
+}
+.textLogo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.9rem;
+    line-height: 2rem;
+    font-weight: 900;
+    float: left !important;
+}
+.navbar .nav-item a{
+    transition: .5s;
+    font-size: 1.1rem;
+}
+.navbar .nav-item a:hover{
+    color: #ffaa45;
+
+}
+.navbar-toggler .navbar-toggler-icon{
+    background-color: rgba(255, 255, 255, 0.59);
+}
+.moonIcon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.after100{
+    border-bottom:1px #ffc107 solid;
+
+}
+/*
+ .
+ .
+ Header Style end
+ .
+ .
+ */
+
+/*
+ .
+ .
+ second section Style Start
+ .
+ .
+ */
+.secondSection{
+    margin-top: 150px;
+    /* height: 80vh; */
+}
+.secondSection .text1{
+    font-size: 3.75rem;
+    font-weight: 900;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+}
+.secondSection .images{
+    overflow-y: hidden;
+}
+.row2 p{
+    font-size: .9rem;
+    line-height: 1.25rem;
+    color: rgba(255, 255, 255, 0.594);
+}
+
+.row3 .option i{
+    font-size: 75px;
+}
+.row3 .option p{
+
+}
+#hiddenoptions{
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.none{
+    display: none !important;
+}
+@keyframes example {
+    0%   {transform: translateY(0px);}
+    25% {transform: translateY(-30px);}
+  }
+
+  /* The element to apply the animation to */
+ .secondSection .row img  {
+
+
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+.ThridSection .row .col-s-12 div{
+    background-color: #ffc107;
+}
+.ThridSection .row .col-s-12 div h1{
+    margin-top: 10px;
+}
+/* forth section */
+.section4 .row1
+{
+    transition: .8s;
+}
+.section4 .row:hover img
+{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.lastImg:hover{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 0;
+}
+.grid .img1:hover{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 0;
+}
+.category .buttonGroup button {
+    background-color:#010D78;
+    padding: 1rem 1.5rem;
+    transition: .9s;
+}
+.activated{
+    background-color: #FFCC00 !important;
+}
+
+.category .buttonGroup button:hover{
+    background-color: #FFCC00 !important;
+}
+.category .images:hover{
+    background-color: #FFCC00 !important;
+
+}
+.category h1{
+    font-size: 1.5rem;
+}
+.category .images{
+    border-radius: 1.5rem;
+    transition: .9s;
+}
+.category .images img:hover{
+    transform: scale(1.2);
+}
+/* Feel free to change duration  */
+.animated  {
+    -webkit-animation-duration : 1000 ms  ;
+    animation-duration : 1000 ms  ;
+    -webkit-animation-fill-mode : both  ;
+    animation-fill-mode : both  ;
+  }
+  /* .owl-animated-out - only for current item */
+  /* This is very important class. Use z-index if you want move Out item above In item */
+  .owl-animated-out {
+    z-index : 1
+     }
+  /* .owl-animated-in - only for upcoming item
+  /* This is very important class. Use z-index if you want move In item above Out item */
+  .owl-animated-in {
+    z-index : 0
+     }
+  /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
+  .fadeOut  {
+    -webkit-animation-name : fadeOut  ;
+    animation-name : fadeOut  ;
+  }
+  @-webkit-keyframes  fadeOut  {
+    0% {
+      opacity : 1   ;
+    }
+    100% {
+      opacity : 0   ;
+    }
+  }
+
+  @keyframes  fadeOut  {
+    0% {
+      opacity : 1   ;
+    }
+    100% {
+      opacity : 0   ;
+    }
+  }
+  .modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+  }
+  .card-footer:last-child {
+    border-radius: 0 0 7px 7px;
+  }
+  .card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .blockquote-footer {
+    display: block;
+    font-size: 80%;
+    color: #6c757d;
+  }
+  footer {
+    display: block;
+  }
+  .back-to-top {
+    position: fixed;
+    display: nonee;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1111111;
+  }
+  footer i {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  @media only screen and (max-width: 770px) {
+    .secondSection .myImages{
+        width: 50%;
+    }
+   .row1 p .text1{
+        color: red !important;
+    }
+  }
+
